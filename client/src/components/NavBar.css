@@ -1,0 +1,40 @@
+.navbar-custom {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff !important;
+  font-size: 1.5em;
+}
+
+.navbar-custom .nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #17a2b8 !important;
+  text-decoration: underline;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-indicator.connected {
+  background-color: #28a745;
+}
+
+.status-indicator.disconnected {
+  background-color: #dc3545;
+}
+
+.status-indicator.checking {
+  background-color: #ffc107;
+}
