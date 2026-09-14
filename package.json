@@ -1,0 +1,42 @@
+{
+  "name": "nfl-ai-news-fantasy",
+  "version": "1.0.0",
+  "description": "AI-powered NFL news and fantasy scores tracker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "npm run dev",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "keywords": [
+    "nfl",
+    "fantasy",
+    "ai",
+    "news",
+    "sports"
+  ],
+  "author": "314Jaguar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1",
+    "axios": "^1.3.2",
+    "mongoose": "^7.0.0",
+    "nodemon": "^2.0.20",
+    "nfl-api": "^1.0.0",
+    "node-fetch": "^3.3.0",
+    "moment": "^2.29.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
